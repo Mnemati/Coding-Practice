@@ -1,0 +1,16 @@
+class Solution(object):
+    ''' this class converts the number to string,
+    append it to a list and then reverse the list to 
+    see if they are equal
+    '''
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        a = [digit for digit in str(x)]
+        b = [digit for digit in str(x)]
+        
+        a.reverse()
+        
+        return a==b
